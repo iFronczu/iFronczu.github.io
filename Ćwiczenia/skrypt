@@ -1,0 +1,15 @@
+script>
+function wyznacz(){
+var sr1 = parseFloat(document.getElementById("sr1").value);
+var sr2 = parseFloat(document.getElementById("sr2").value);
+var sr3 = parseFloat(document.getElementById("sr3").value);
+if(sr1 <= 0 || sr2 <= 0 || sr3 <= 0||isNaN(sr1)||isNaN(sr2)||isNaN(sr3)){
+var srednia = "wpisz poprawne dane";
+alert("wpisz poprawne dane");
+document.getElementById("wynik").innerHTML = "wpisz poprawne dane";
+}else
+{ document.getElementById("wynik").innerHTML = Math.min(sr1,sr2,sr3);
+}
+
+}
+</script>
